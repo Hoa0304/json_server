@@ -1,14 +1,14 @@
 {
     "compilerOptions": {
-      "target": "ESNext",
-      "module": "ESNext",
+      "target": "es6",
+      "module": "commonjs",
       "strict": true,
       "esModuleInterop": true,
       "skipLibCheck": true,
       "forceConsistentCasingInFileNames": true,
       "outDir": "./dist"
     },
-    "include": ["src/api/**/*.ts"],
+    "include": ["api/**/*.ts"],
     "exclude": ["node_modules"]
-}
+  }
   
