@@ -2,11 +2,11 @@
   "name": "json-server-vite",
   "version": "1.0.0",
   "description": "Deploy JSON Server with Vite",
-  "main": "api/server.ts",
+  "main": "src/api/server.ts",
   "type": "module",
   "scripts": {
-    "dev": "ts-node api/server.ts",
-    "start": "node dist/server.js",
+    "dev": "ts-node src/api/server.ts",
+    "start": "node dist/api/server.js",
     "build": "tsc"
   },
   "dependencies": {
