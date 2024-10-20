@@ -1,12 +1,22 @@
 {
-  "name": "json-server-vercel",
+  "name": "json-server-vite",
   "version": "1.0.0",
-  "description": "Deploy JSON Server to Vercel",
-  "main": "api/server.js",
+  "description": "Deploy JSON Server with Vite",
+  "main": "api/server.ts",
+  "type": "module",
   "scripts": {
-    "start": "node api/server.js"
+    "dev": "ts-node api/server.ts",
+    "start": "node dist/server.js",
+    "build": "tsc"
   },
   "dependencies": {
+    "express": "^4.17.1",
     "json-server": "^0.17.4"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.7.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
   }
 }
